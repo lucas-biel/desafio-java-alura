@@ -41,6 +41,7 @@ public class Desafio {
                     System.out.print("Valor a receber: R$");
                     amountToReceive = sc.nextDouble();
                     balance += amountToReceive;
+                    System.out.printf("Novo saldo: R$%.2f", balance);
                     break;
                 case 3:
                     System.out.print("Valor que deseja transferir: R$");
@@ -50,6 +51,7 @@ public class Desafio {
                         System.out.printf("O valor é maior do que o saldo! Digite um valor menor ou igual a R$%.2f!\n", balance);
                     } else {
                         balance -= amountToWithdraw;
+                        System.out.printf("Novo saldo: R$%.2f", balance);
                     }
                     break;
                 case 4:
